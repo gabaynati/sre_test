@@ -44,11 +44,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>#!/bin/bash
-        set -e
-        tox
-        docker build -t sre_test_${branch}:${BUILD_ID} .
-        #docker push &lt;DOCKER_REGISTRY_URL&gt;/sre_test_${branch}:${BUILD_ID}
+      <command>#!/bin/bash&#xA;set -e&#xA;tox&#xA;docker build -t sre_test_${branch}:${BUILD_ID} .&#xA;#docker push [DOCKER_REGISTRY_UR]/sre_test_${branch}:${BUILD_ID}
       </command>
     </hudson.tasks.Shell>
   </builders>
