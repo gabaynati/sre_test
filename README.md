@@ -6,6 +6,7 @@
    The Jenkins master docker socket is connected to the host docker socket, therefore it requires docker daemon running on the host.
 </p>
 <p>How to build using Jenkins:<br>
+   (navigate to the root of the project)<br>
    1.Build and run jenkins master<br>
    &emsp;docker build -t jenkins_master ./jenkins/<br>
    2.Run jenkins master and wait until it fully launch:<br>
@@ -17,6 +18,7 @@
    5.Build the jenkins job.
 </p>
 <p>How to build and run the service manually:<br>
+   (navigate to the root of the project)<br>
    1.Build docker image:<br>
    &emsp;docker build -t sre_test .<br>
    2.Run app:<br>

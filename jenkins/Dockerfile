@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:alpine
-# Start jenkins unlocked
+# start jenkins unlocked
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 USER root
 
